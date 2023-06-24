@@ -1,0 +1,52 @@
+body { 
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    transition: background-color 0.2s;
+    background-color: white;
+}
+body.black {
+    background-color: black;
+}
+
+#b64image {
+    max-width: 90vw;
+    max-height: 70vh;
+}
+
+#b64play {
+    max-height: 10vh;
+    background-color: white;
+    box-shadow: 0 0 0 0.3rem black;
+    padding: 1rem;
+    margin: 0.3rem;
+    border-radius: 1rem;
+    color: black;
+    font-size: 2rem;
+    font-family: monospace;
+    cursor: default;
+}
+#b64play.loaded {
+    cursor: pointer;
+}
+#b64play.hidden {
+    display: none;
+}
+
+#b64log {
+    font-family: monospace;
+    color: black;
+    max-width: 90vw;
+    max-height: 18vh;
+    overflow: auto;
+}
+body.black #b64log {
+    color: white;
+}
